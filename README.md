@@ -81,6 +81,14 @@ Transformer 기반 기계 번역 모델에 대한 설명은 [Transformer를 이�
 
 
 ## 결과
+* ### 챗봇 학습 Score History
+    * Validation Set BLEU History<br>
+    <img src="images/img1.png" width="80%"><br><br>
+
+    * Validation Set NIST History<br>
+    <img src="images/img2.png" width="80%"><br><br>
+
+
 * ### 챗봇 학습 결과 샘플
     chatting 모드로 실행하여 문장을 넣었을 때 나온 답변입니다.
 
