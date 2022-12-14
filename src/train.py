@@ -41,7 +41,7 @@ class Trainer:
         self.max_len = self.config.max_len
         self.result_num = self.config.result_num
 
-        # define tokenizer (WMT uses shared tokenizer)
+        # define tokenizer
         self.tokenizer = Tokenizer(self.config)
 
         # dataloader
