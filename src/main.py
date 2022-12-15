@@ -84,7 +84,7 @@ def main(config_path:Config, args:ArgumentParser):
         print('Chatbot ends...\n')
 
     else:
-        print("Please select mode between 'train', 'inference', and 'chatting'..")
+        print("Please select mode among 'train', 'inference', and 'chatting'..")
         sys.exit()
 
 
