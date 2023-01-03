@@ -99,10 +99,13 @@ def tensor2list(src, ref, pred, tokenizer):
 
 
 
-def print_samples(src, ref, pred, ids):
+def print_samples(src, ref, pred, ids, tokenizer):
     print('-'*50)
     for i in ids:
-        s, r, p = ' '.join(src[i]), ' '.join(ref[i][0]), ' '.join(pred[i])
+        s = tokenizer.tokenizer.convert_tokens_to_string(src[i])
+        r = tokenizer.tokenizer.convert_tokens_to_string(ref[i][0])
+        p = tokenizer.tokenizer.convert_tokens_to_string(pred[i])
+
         print('src : {}'.format(s))
         print('gt  : {}'.format(r))
         print('pred: {}\n'.format(p))
