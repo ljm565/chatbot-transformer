@@ -1,6 +1,4 @@
 .vscode/
-__pycache__/
-model/
-loss/
 .DS_Store
-logs/
+__pycache__/
+outputs/

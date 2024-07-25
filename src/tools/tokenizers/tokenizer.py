@@ -7,7 +7,7 @@ class Tokenizer:
         self.tokenizer = BertTokenizer(vocab_file=config.tokenizer_path, do_lower_case=False) 
 
         self.pad_token, self.pad_token_id = self.tokenizer.pad_token, self.tokenizer.pad_token_id
-        self.sos_token, self.sos_token_id = self.tokenizer.cls_token, self.tokenizer.cls_token_id
+        self.bos_token, self.bos_token_id = self.tokenizer.cls_token, self.tokenizer.cls_token_id
         self.eos_token, self.eos_token_id = self.tokenizer.sep_token, self.tokenizer.sep_token_id
         self.unk_token, self.unk_token_id = self.tokenizer.unk_token, self.tokenizer.unk_token_id
 

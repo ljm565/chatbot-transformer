@@ -191,11 +191,11 @@ class Trainer:
 
 
     def chatting(self, query):
-        query = [self.tokenizer.sos_token_id] + self.tokenizer.encode(query)[:self.max_len-2] + [self.tokenizer.eos_token_id]
+        query = [self.tokenizer.bos_token_id] + self.tokenizer.encode(query)[:self.max_len-2] + [self.tokenizer.eos_token_id]
         query = query + [self.tokenizer.pad_token_id] * (self.max_len - len(query))
         
         query = torch.LongTensor(query).unsqueeze(0).to(self.device)
-        trg = torch.LongTensor([self.tokenizer.sos_token_id]).unsqueeze(0).to(self.device)
+        trg = torch.LongTensor([self.tokenizer.bos_token_id]).unsqueeze(0).to(self.device)
 
         decoder_all_output = []
         for i in range(self.max_len):
