@@ -55,7 +55,7 @@ python3 src/run/train.py --config config/config.yaml --mode train
     |   |   ├── build                 <- Custom tokenizer 학습을 위한 코드 폴더
     |   |   |   ├── make_vocab.sh
     |   |   |   └── vocab_trainer.py
-    |   |   └── tokenizer.py          <- Tokenizer classes of IWSLT and WMT
+    |   |   └── tokenizer.py          <- Tokenizer class
     |   |
     |   ├── early_stopper.py          <- Early stopper class 파일
     |   ├── evaluator.py              <- Metric evaluator class 파일
