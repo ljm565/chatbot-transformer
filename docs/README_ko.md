@@ -89,10 +89,10 @@ Transformer 챗봇 모델을 학습하기 위해서 다음 과정을 따라주�
 ## Training Results
 ### Chatbot Training Score History
 * Validation Set BLEU History<br>
-<img src="docs/figs/img1.png" width="80%"><br><br>
+<img src="figs/img1.png" width="80%"><br><br>
 
 * Validation Set NIST History<br>
-<img src="docs/figs/img2.png" width="80%"><br><br>
+<img src="figs/img2.png" width="80%"><br><br>
 
 
 ### Result Samples
