@@ -322,3 +322,26 @@ class Trainer:
         
         return metric_results
     
+    
+    def chatting(self, query):
+        query = [self.tokenizer.bos_token_id] + self.tokenizer.encode(query)[:self.max_len-2] + [self.tokenizer.eos_token_id]
+        query = query + [self.tokenizer.pad_token_id] * (self.max_len - len(query))
+        
+        query = torch.LongTensor(query).unsqueeze(0).to(self.device)
+        trg = torch.LongTensor([self.tokenizer.bos_token_id]).unsqueeze(0).to(self.device)
+
+        decoder_all_output = []
+        for i in range(self.max_len):
+            if i == 0:
+                trg = trg[:, i].unsqueeze(1)
+                _, output = self.model(query, trg)
+                trg = torch.cat((trg, torch.argmax(output[:, -1], dim=-1).unsqueeze(1)), dim=1)
+            else:
+                _, output = self.model(query, trg)
+                trg = torch.cat((trg, torch.argmax(output[:, -1], dim=-1).unsqueeze(1)), dim=1)
+
+            decoder_all_output.append(output[:, -1].unsqueeze(1).detach().cpu())
+        decoder_all_output = torch.argmax(torch.cat(decoder_all_output, dim=1), dim=-1)
+        decoder_all_output = self.tokenizer.decode(decoder_all_output[0].tolist())
+        
+        return decoder_all_output

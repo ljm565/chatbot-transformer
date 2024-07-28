@@ -18,16 +18,16 @@
             "type": "debugpy",
             "request": "launch",
             "program": "${workspaceFolder}/src/run/validation.py",
-            "args": ["-r", "outputs/transformer/iwslt14-ende", "-l", "metric", "--dataset_type", "test"],
+            "args": ["-r", "outputs/transformer/counselor_chatbot", "-l", "metric", "--dataset_type", "test"],
             "console": "integratedTerminal",
             "justMyCode": true
         },
         {
-            "name": "calculate multi_bleu.perl",
+            "name": "chatting",
             "type": "debugpy",
             "request": "launch",
-            "program": "${workspaceFolder}/src/run/multi_bleu_perl.py",
-            "args": ["-r", "outputs/transformer/iwslt14-ende", "-l", "metric", "--dataset_type", "test"],
+            "program": "${workspaceFolder}/src/run/chatting.py",
+            "args": ["-r", "outputs/transformer/counselor_chatbot", "-l", "metric"],
             "console": "integratedTerminal",
             "justMyCode": true
         }
