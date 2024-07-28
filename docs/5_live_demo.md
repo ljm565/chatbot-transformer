@@ -1,7 +1,7 @@
 # Live Demo
 Here, we provide a guide for executing live chat demo with your trained model in a terminal.
 
-### 1. Translator Demo
+### 1. Chatbot Demo
 #### 1.1 Arguments
 There are several arguments for running `src/run/chatting.py`:
 * [`-r`, `--resume_model_dir`]: Directory to the model to execute. Provide the path up to `${project}/${name}`, and it will automatically select the model from `${project}/${name}/weights/` to visualize.

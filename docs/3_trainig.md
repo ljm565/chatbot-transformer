@@ -1,4 +1,4 @@
-# Training GRU Translator
+# Training Transformer Chatbot
 Here, we provide guides for training a Transformer chatbot model.
 
 ### 1. Configuration Preparation
