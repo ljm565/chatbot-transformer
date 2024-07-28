@@ -3,7 +3,7 @@
 
 ## Introduction
 We will use data from the Daum Cafe ["사랑보다 아름다운 실연"]( http://cafe116.daum.net/_c21_/home?grpid=1bld) to train a chatbot model using chatbot data created by [송영숙](https://github.com/songys/Chatbot_data).
-For an explanation of Transformer-based machine translation models, please refer to [Transformer를 이용한 한국어 대화 챗봇](https://ljm565.github.io/contents/transformer3.html).
+For an explanation of Transformer-based chatbot models, please refer to [Transformer를 이용한 한국어 대화 챗봇](https://ljm565.github.io/contents/transformer3.html).
 Additionally, this model can utilize not only positional encoding used in vanilla transformers but also positional embedding.
 Lastly, based on the final trained model, we will run an actual chatbot.
 <br><br><br>

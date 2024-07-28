@@ -1,5 +1,5 @@
 # Data Preparation
-Here, we will proceed with a Transformer chatbot model training tutorial using the Daum Cafe ["사랑보다 아름다운 실연"]( http://cafe116.daum.net/_c21_/home?grpid=1bld) dataset by default.
+Here, we will proceed with a Transformer chatbot model training tutorial using the Daum Cafe ["사랑보다 아름다운 실연"]( http://cafe116.daum.net/_c21_/home?grpid=1bld) counselor dataset by default.
 Please refer to the following instructions to utilize custom datasets.
 
 ### 1. Counselor Data
@@ -17,7 +17,7 @@ CUSTOM:
 
 ### 2. Custom Data
 If you want to train your custom dataset, set the `counselor_dataset_train` value in the `config/config.yaml` file to `False` as follows.
-You may require to implement your custom dataloader codes in `src/utils/data_utils.py`.
+You may require to implement your custom dataloader codes in `src/trainer/build.py`.
 ```yaml
 counselor_dataset_train: False   # If True, counselor data will be loaded automatically.
 counselor_dataset:

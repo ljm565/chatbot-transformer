@@ -2,7 +2,7 @@
 
 ## Introduction
 다음 카페 ["사랑보다 아름다운 실연"]( http://cafe116.daum.net/_c21_/home?grpid=1bld) 데이터를 사용하여 [송영숙](https://github.com/songys/Chatbot_data)님께서 만든 챗봇 데이터를 통해 챗봇 모델을 학습합니다.
-Transformer 기반 기계 번역 모델에 대한 설명은 [Transformer를 이용한 한국어 대화 챗봇](https://ljm565.github.io/contents/transformer3.html)을 참고하시기 바랍니다.
+Transformer 기반 챗봇에 대한 설명은 [Transformer를 이용한 한국어 대화 챗봇](https://ljm565.github.io/contents/transformer3.html)을 참고하시기 바랍니다.
 또한 본 모델은 vanilla transformer에서 사용하는 positional encoding 뿐만 아니라, positional embedding을 선택할 수 있습니다.
 마지막으로 최종 학습된 모델을 바탕으로 실제 챗봇을 구동해볼 수 있습니다.
 <br><br><br>
